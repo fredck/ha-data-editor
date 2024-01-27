@@ -1,9 +1,16 @@
-service: ha_data_editor.update_device
-description: Updates a device description in the device registry.
-fields:
-  device_id:
-    description: The ID of the device to change.
-    example: "1234abcd"
-  area_id:
-    description: The new area id to assign to the device.
-    example: "living_room"
+update_device:
+  description: Updates a device description in the device registry.
+  fields:
+    device_id:
+      description: The id of the device to update.
+      example: "1234abcd"
+      required: true
+      selector:
+        device:
+
+    area_id:
+      description: The new area to assign to the device.
+      example: "living_room"
+      required: true
+      selector:
+        area:
