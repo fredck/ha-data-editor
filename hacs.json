@@ -1,0 +1,8 @@
+{
+  "name": "HA Data Editor",
+  "filename": "ha-data-editor.zip",
+  "hide_default_branch": true,
+  "homeassistant": "2024.1.0",
+  "render_readme": true,
+  "zip_release": true
+}
