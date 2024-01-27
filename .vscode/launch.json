@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Home Assistant: Local",
+            "type": "python",
+            "request": "launch",
+            "module": "homeassistant",
+            "justMyCode": false,
+            "args": [
+                "--debug",
+                "--config",
+                "${workspaceFolder}/config"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}
