@@ -2,7 +2,7 @@
 
 ## Description
 
-HA Data Editor is a custom integration for Home Assistant that offers a user-friendly interface to manage and edit device and entity properties directly within the Home Assistant UI. This integration includes a custom panel equipped with an editable table, enabling users to view and effortlessly modify details of devices, such as names and areas.
+HA Data Editor is a custom integration for Home Assistant that provides a user-friendly interface for managing and editing device and entity properties directly within the Home Assistant UI. This integration includes a custom panel equipped with an editable table, allowing users to view and effortlessly modify device details, such as names and areas.
 
 **Initial Release**: The project is in its early stages. Currently, it only supports changing the area of devices. Future updates will expand this functionality to include changing other information and supporting other data registries such as entities, areas, users, etc.
 
@@ -20,10 +20,12 @@ HA Data Editor is a custom integration for Home Assistant that offers a user-fri
 ### Via HACS (Home Assistant Community Store)
 
 1. Ensure HACS is installed in your Home Assistant setup.
-2. In HACS, navigate to "Integrations" and select "+ Explore & Add Integrations".
-3. Search for "HA Data Editor" and select it.
-4. Click "Install this Repository in HACS".
-5. Restart Home Assistant to apply the changes.
+2. In HACS, navigate to "Integrations".
+3. In the 3-dot menu at the top-right, select "Custom repositories".
+4. Add `https://github.com/fredck/ha-data-editor` to the list.
+5. "HA Data Editor" should show up. Select it.
+6. Click "download" to install.
+7. Restart Home Assistant to apply the changes.
 
 ### Manual Installation
 
@@ -33,12 +35,12 @@ HA Data Editor is a custom integration for Home Assistant that offers a user-fri
 
 ## Post-Installation and Auto-Discovery
 
-After installation, HA Data Editor integrates automatically into your Home Assistant environment. No additional configuration is required.
+After installation, go to the integrations page and add the "HA Data Editor" integration.
 
 ### Accessing the Data Editor
 
-- "HA Data Editor" will be readily available in the Home Assistant sidebar upon restarting Home Assistant after installation.
-- Clicking on the sidebar item opens the custom panel where you can interact with and edit your devices and entities.
+- "HA Data Editor" will be readily available in the Home Assistant sidebar upon integration installation.
+- Clicking on the sidebar item opens the custom panel where you can interact with and edit your devices.
 
 ## Usage
 
