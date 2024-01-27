@@ -7,4 +7,4 @@ default_config:
 logger:
   default: info
   logs:
-    custom_components.ha-data-editor: debug
+    custom_components.ha_data_editor: debug
