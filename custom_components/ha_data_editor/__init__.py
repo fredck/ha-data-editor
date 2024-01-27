@@ -1,7 +1,11 @@
 """The HA Data Editor component."""
+import logging
 import os
 
 from homeassistant import config_entries, core
+from homeassistant.helpers import device_registry
+
+_LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_entry(
@@ -27,6 +31,22 @@ async def async_setup_entry(
         sidebar_icon="mdi:file-document-edit",
         require_admin=True,
     )
+
+    async def update_device(call):
+        """Handle the service call."""
+        device_id = call.data.get("device_id")
+        new_area = call.data.get("area_id")
+
+        dev_reg = device_registry.async_get(hass)
+        device = dev_reg.devices.get(device_id)
+
+        if device is None:
+            _LOGGER.error("Device not found: %s", device_id)
+            return
+
+        dev_reg.async_update_device(device_id, area_id=new_area)
+
+    hass.services.async_register("ha_data_editor", "update_device", update_device)
 
     return True
 

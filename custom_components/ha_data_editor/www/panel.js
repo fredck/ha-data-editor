@@ -63,13 +63,14 @@ class HaDataEditorPanel extends HTMLElement {
                 }
             },
             manualColumnResize: true,
-            colWidths: [300, 200],
+            colWidths: [400, 250],
             licenseKey: 'non-commercial-and-evaluation',
             afterChange: (changes, source) => {
                 if (source !== 'loadData') {
                     changes.forEach(([row, prop, oldValue, newValue]) => {
-                        if (prop === 'area') {
-                            this.updateArea(hass, data[row].id, newValue);
+                        if (prop === 'area' && oldValue !== newValue) {
+                            const physicalRow = this.hot.toPhysicalRow(row);
+                            this.updateArea(hass, data[physicalRow].id, newValue);
                         }
                     });
                 }
@@ -78,10 +79,10 @@ class HaDataEditorPanel extends HTMLElement {
     }
 
     updateArea(hass, deviceId, newAreaId) {
-        // Implement the logic to call Home Assistant's service to update the device's area
-        // Example: hass.callService('device_registry', 'update', { device_id: deviceId, area_id: newAreaId });
-        console.log(`Updating device ${deviceId} area to ${newAreaId}`);
-        // Note: Actual implementation depends on Home Assistant's available services and your setup
+        hass.callService('ha_data_editor', 'update_device', {
+            device_id: deviceId,
+            area_id: newAreaId
+        });
     }
 
 }
