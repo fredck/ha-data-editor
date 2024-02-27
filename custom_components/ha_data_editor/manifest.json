@@ -5,6 +5,7 @@
   "config_flow": true,
   "documentation": "https://github.com/fredck/ha-data-editor/blob/master/README.md",
   "integration_type": "service",
+  "iot_class": "calculated",
   "issue_tracker": "https://github.com/fredck/ha-data-editor/issues",
   "version": "0.9.1"
 }
