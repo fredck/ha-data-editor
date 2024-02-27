@@ -1,14 +1,17 @@
 update_device:
+  name: Update device
   description: Updates a device description in the device registry.
   fields:
     device_id:
-      description: The id of the device to update.
+      name: Device
+      description: The the device to update.
       example: "1234abcd"
       required: true
       selector:
         device:
 
     area_id:
+      name: Area
       description: The new area to assign to the device.
       example: "living_room"
       required: true
