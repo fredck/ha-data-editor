@@ -3,6 +3,7 @@ import logging
 import os
 
 from homeassistant import config_entries, core
+from homeassistant.components import frontend
 from homeassistant.helpers import device_registry
 
 _LOGGER = logging.getLogger(__name__)
@@ -22,10 +23,11 @@ async def async_setup_entry(
     # Register a new static path for serving your custom panel
     hass.http.register_static_path("/ha-data-editor-www", www_path)
 
-    hass.components.frontend.add_extra_js_url(hass, "/ha-data-editor-www/panel.js")
+    frontend.add_extra_js_url(hass, "/ha-data-editor-www/panel.js")
 
     # Register the custom panel
-    hass.components.frontend.async_register_built_in_panel(
+    frontend.async_register_built_in_panel(
+        hass,
         component_name="ha-data-editor",
         sidebar_title="HA Data Editor",
         sidebar_icon="mdi:file-document-edit",
@@ -56,6 +58,9 @@ async def async_unload_entry(
 ) -> bool:
     """Unload a config entry."""
 
-    hass.components.frontend.async_remove_panel("ha-data-editor")
+    frontend.async_remove_panel(
+        hass,
+        frontend_url_path="ha-data-editor",
+    )
 
     return True
