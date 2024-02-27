@@ -18,6 +18,10 @@ HA Data Editor is a custom integration for Home Assistant that provides a user-f
 - **Seamless UI Integration**: Integrates as a custom panel within the Home Assistant UI, maintaining a consistent user experience.
 - **Efficient Backend Services**: Ensures smooth communication and timely updates between the frontend and Home Assistant backend.
 
+## Screenshot
+
+![HA Data Editor Screenshot](https://github.com/fredck/ha-data-editor/blob/master/images/ha-data-editor-screenshot.png?raw=true "A real world screenshot")
+
 ## Installation
 
 ### Via HACS (Home Assistant Community Store)
