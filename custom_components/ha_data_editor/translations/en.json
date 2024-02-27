@@ -1,5 +1,6 @@
 {
   "config": {
+    "step": {},
     "abort": {
       "already_configured": "You cannot have more than one HA Data Editor service. Service already configured."
     }
