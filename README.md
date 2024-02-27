@@ -64,5 +64,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 [hacs]: https://github.com/hacs/integration
 [hacsbadge]: https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/fredck/lightener.svg?style=for-the-badge
-[releases]: https://github.com/fredck/lightener/releases
+[releases-shield]: https://img.shields.io/github/release/fredck/ha-data-editor.svg?style=for-the-badge
+[releases]: https://github.com/fredck/ha-data-editor/releases
