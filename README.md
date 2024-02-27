@@ -20,7 +20,7 @@ HA Data Editor is a custom integration for Home Assistant that provides a user-f
 
 ## Screenshot
 
-![HA Data Editor Screenshot](https://github.com/fredck/ha-data-editor/blob/master/images/ha-data-editor-screenshot.png?raw=true "A real world screenshot")
+![HA Data Editor Screenshot](https://github.com/fredck/ha-data-editor/blob/main/images/ha-data-editor-screenshot.png?raw=true "A real world screenshot")
 
 ## Installation
 
