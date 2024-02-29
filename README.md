@@ -44,6 +44,8 @@ HA Data Editor is a custom integration for Home Assistant that provides a user-f
 
 After installation, go to the integrations page and add the "HA Data Editor" integration.
 
+**Important**: Right after the installation, the new "HA Data Editor" will be immediately available in the sidebar but it'll be empty. Refresh the browser to make its contents show up.
+
 ### Accessing the Data Editor
 
 - "HA Data Editor" will be readily available in the Home Assistant sidebar upon integration installation.
