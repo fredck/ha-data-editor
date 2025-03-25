@@ -3,6 +3,10 @@
 [![GitHub Release][releases-shield]][releases]
 [![hacs][hacsbadge]][hacs]
 
+## Repository Archived
+
+This repository is not being actively maintained and has been archived. Feel free to fork it and improve it, if necessary. Thank you!
+
 ## Description
 
 HA Data Editor is a custom integration for Home Assistant that provides a user-friendly interface for managing and editing device and entity properties directly within the Home Assistant UI. This integration includes a custom panel equipped with an editable table, allowing users to view and effortlessly modify device details, such as names and areas.
